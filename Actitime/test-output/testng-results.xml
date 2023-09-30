@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[database connected]]>
+    </line>
+    <line>
+      <![CDATA[Browser launched successfully]]>
+    </line>
+    <line>
+      <![CDATA[logged in successfully]]>
+    </line>
+    <line>
+      <![CDATA[database disconnected]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-09-29T08:59:54 IST" name="Default suite" finished-at="2023-09-29T09:00:11 IST" duration-ms="17086">
+    <groups>
+    </groups>
+    <test started-at="2023-09-29T08:59:54 IST" name="Default test" finished-at="2023-09-29T09:00:11 IST" duration-ms="17086">
+      <class name="com.Actitime.Testscripts.CreateCustomer">
+        <test-method is-config="true" signature="databaseconnection()[pri:0, instance:com.Actitime.Testscripts.CreateCustomer@1040be71]" started-at="2023-09-29T08:59:54 IST" name="databaseconnection" finished-at="2023-09-29T08:59:54 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[database connected]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- databaseconnection -->
+        <test-method is-config="true" signature="launchrowser()[pri:0, instance:com.Actitime.Testscripts.CreateCustomer@1040be71]" started-at="2023-09-29T08:59:54 IST" name="launchrowser" finished-at="2023-09-29T09:00:00 IST" duration-ms="6593" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser launched successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchrowser -->
+        <test-method is-config="true" signature="loginToActitime()[pri:0, instance:com.Actitime.Testscripts.CreateCustomer@1040be71]" started-at="2023-09-29T09:00:00 IST" name="loginToActitime" finished-at="2023-09-29T09:00:00 IST" duration-ms="289" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[logged in successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToActitime -->
+        <test-method signature="createCustomer()[pri:0, instance:com.Actitime.Testscripts.CreateCustomer@1040be71]" started-at="2023-09-29T09:00:00 IST" name="createCustomer" finished-at="2023-09-29T09:00:09 IST" duration-ms="8853" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getRow(int)" because the return value of "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getRow(int)" because the return value of "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" is null
+at com.Actitime.GenericLibrary.FileLibrary.readDataFromExcel(FileLibrary.java:25)
+at com.Actitime.Testscripts.CreateCustomer.createCustomer(CreateCustomer.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCustomer -->
+        <test-method is-config="true" signature="logoutFromActitime()[pri:0, instance:com.Actitime.Testscripts.CreateCustomer@1040be71]" started-at="2023-09-29T09:00:10 IST" name="logoutFromActitime" finished-at="2023-09-29T09:00:11 IST" duration-ms="1100" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="/logout.do" id="logoutLink" class="logout">...</a> is not clickable at point (1479, 17). Other element would receive the click: <img src="/img/default/dialogs/exitconfirm/shade.png?hash=1846506722" id="muar" style="display: block;">
+  (Session info: chrome=117.0.5938.132)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a180b3ce79caa7748b9275777536d778, clickElement {id=FA9C9EA4A5F911DEF714EB520167861A_element_254}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.132, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\thane\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60199}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60199/devtoo..., se:cdpVersion: 117.0.5938.132, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a180b3ce79caa7748b9275777536d778)] -> id: logoutLink]
+Session ID: a180b3ce79caa7748b9275777536d778]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/logout.do" id="logoutLink" class="logout">...</a> is not clickable at point (1479, 17). Other element would receive the click: <img src="/img/default/dialogs/exitconfirm/shade.png?hash=1846506722" id="muar" style="display: block;">
+  (Session info: chrome=117.0.5938.132)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a180b3ce79caa7748b9275777536d778, clickElement {id=FA9C9EA4A5F911DEF714EB520167861A_element_254}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.132, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\thane\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60199}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60199/devtoo..., se:cdpVersion: 117.0.5938.132, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a180b3ce79caa7748b9275777536d778)] -> id: logoutLink]
+Session ID: a180b3ce79caa7748b9275777536d778
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+at com.Actitime.GenericLibrary.BaseClass.logoutFromActitime(BaseClass.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:755)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromActitime -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.Actitime.Testscripts.CreateCustomer@1040be71]" started-at="2023-09-29T09:00:11 IST" name="closeBrowser" finished-at="2023-09-29T09:00:11 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="databaseDisconnect()[pri:0, instance:com.Actitime.Testscripts.CreateCustomer@1040be71]" started-at="2023-09-29T09:00:11 IST" name="databaseDisconnect" finished-at="2023-09-29T09:00:11 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[database disconnected]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- databaseDisconnect -->
+      </class> <!-- com.Actitime.Testscripts.CreateCustomer -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
